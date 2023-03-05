@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: 'Fira Code', monospace;
 }
 
 :root {
@@ -13,6 +14,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'Fira Code', monospace;
+
 }
 
 main {
@@ -35,18 +38,20 @@ h1 {
 h2 {
     font-size: 22px;
     text-align: center;
-    margin-inline: 50px;
+    color: white;
 }
 
 header p {
     font-size: 20px;
     margin-inline: 50px;
-    margin-bottom: 13px;
+    margin-bottom: 15px;
     text-align: center;
+    color: white;
 }
 
 hr {
-    width: 60%;
+    width: 70%;
+    border: 2px solid black;
 }
 
 .card {
@@ -63,7 +68,7 @@ hr {
 
 .card p {
     color: var(--p-text);
-    font-size: 20px;
+    font-size: 16px;
     width: 95%;
     text-align: center;
     margin: 35px auto;
@@ -75,11 +80,6 @@ hr {
     /* transition: all 3s ease-in-out; */
     box-shadow: inset 0px 0px 8px#c2cfd8, 0 0 15px#c2cfd8;
 }
-
-/* .overlay {
-    height: 40px;
-    width: 300px;
-} */
 
 h3 {
     font-size: 20px;
@@ -94,29 +94,30 @@ h3 {
 
 .container {
     background-color: white;
-    height: 225px;
-    width: 95%;
-    /* margin: 25px auto; */
-    /* margin-inline: auto;
-    margin-bottom: 15px; */
     border-radius: 15px;
+    position: absolute;
+    top: 35%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 270px;
+    height: 200px;
+    user-select: all;
 }
 
 .code {
-    margin: 25px auto;
+    margin: 15px;
+    font-size: 73%;
 }
-
-/* .box-trans-code {
-    margin: 14px auto;
-} */
 
 footer {
     text-align: center;
-    margin: 15px auto;
+    margin: 25px auto;
 }
 
 footer p {
     font-size: 20px;
+    color: white;
 }
 
 @media only screen and (max-width: 992px) {
